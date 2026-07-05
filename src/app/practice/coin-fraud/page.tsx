@@ -3,9 +3,10 @@ import PracticeDetail from "@/components/PracticeDetail";
 import { getPractice } from "@/lib/practices";
 
 export const metadata: Metadata = {
-  title: "코인·유사수신 피해 대응 | 데이법률사무소",
+  title: "코인 사기·유사수신 피해 대응 변호사",
   description:
-    "코인 상장 빙자, 원금 보장 유사수신 피해 직후 해야 할 일과 법적 대응 절차를 피해자 관점에서 안내합니다.",
+    "코인 상장 빙자, 채굴기 투자, 스테이킹 이자 지급 중단 등 가상자산 사기·유사수신 피해의 형사 고소와 손해배상 절차를 변호사가 안내합니다.",
+  alternates: { canonical: "/practice/coin-fraud" },
 };
 
 export default function CoinFraudPage() {

@@ -15,10 +15,17 @@ export function generateStaticParams() {
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { slug } = await params;
   const column = getColumn(slug);
-  if (!column) return { title: "칼럼 | 데이법률사무소" };
+  if (!column) return { title: "칼럼" };
   return {
-    title: `${column.title} | 데이법률사무소`,
+    title: column.title,
     description: column.description,
+    alternates: { canonical: `/column/${column.slug}` },
+    openGraph: {
+      type: "article",
+      title: column.title,
+      description: column.description,
+      publishedTime: column.date,
+    },
   };
 }
 

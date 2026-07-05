@@ -132,6 +132,7 @@ export default function Home() {
               >
                 <div className="flex h-12 w-12 items-center justify-center rounded-lg bg-navy-900 text-gold-400">
                   <svg
+                    aria-hidden
                     className="h-6 w-6"
                     fill="none"
                     viewBox="0 0 24 24"

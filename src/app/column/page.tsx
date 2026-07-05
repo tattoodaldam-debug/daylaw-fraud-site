@@ -4,9 +4,10 @@ import Disclaimer from "@/components/Disclaimer";
 import { COLUMNS } from "@/lib/columns";
 
 export const metadata: Metadata = {
-  title: "칼럼 | 데이법률사무소",
+  title: "금융사기 대응 법률 칼럼",
   description:
-    "보이스피싱, 리딩방 투자사기, 코인 유사수신 대응에 도움이 되는 법률 칼럼입니다.",
+    "보이스피싱 대처법, 리딩방 사기 대응, 코인 유사수신 피해 회복 등 금융사기 피해자에게 필요한 법률 정보를 칼럼으로 정리합니다.",
+  alternates: { canonical: "/column" },
 };
 
 export default function ColumnListPage() {

@@ -3,8 +3,22 @@ import type { Practice } from "@/lib/practices";
 import Disclaimer from "@/components/Disclaimer";
 
 export default function PracticeDetail({ practice }: { practice: Practice }) {
+  const faqJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: practice.faqs.map((faq) => ({
+      "@type": "Question",
+      name: faq.question,
+      acceptedAnswer: { "@type": "Answer", text: faq.answer },
+    })),
+  };
+
   return (
     <main>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
+      />
       {/* 페이지 머리말 + 핵심 요약 */}
       <section className="bg-navy-950 text-white">
         <div className="mx-auto max-w-4xl px-4 py-16 sm:px-6 sm:py-20">

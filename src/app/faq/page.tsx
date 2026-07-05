@@ -4,9 +4,10 @@ import Disclaimer from "@/components/Disclaimer";
 import { FAQ_CATEGORIES } from "@/lib/faqs";
 
 export const metadata: Metadata = {
-  title: "자주 묻는 질문 | 데이법률사무소",
+  title: "금융사기 피해 자주 묻는 질문 20가지",
   description:
-    "보이스피싱, 리딩방 투자사기, 코인 유사수신 피해자가 가장 많이 묻는 질문 20가지를 정리했습니다.",
+    "보이스피싱 지급정지·환급, 리딩방 사기 고소, 코인 사기 대응까지 — 금융사기 피해자가 가장 많이 묻는 질문 20가지에 답합니다.",
+  alternates: { canonical: "/faq" },
 };
 
 function buildFaqJsonLd() {

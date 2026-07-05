@@ -3,9 +3,10 @@ import Link from "next/link";
 import Disclaimer from "@/components/Disclaimer";
 
 export const metadata: Metadata = {
-  title: "사무소·변호사 소개 | 데이법률사무소",
+  title: "사무소·변호사 소개",
   description:
-    "금융사기 피해 회복에 집중하는 데이법률사무소와 대표 변호사 강민성을 소개합니다.",
+    "금융사기 피해자 대리에 집중하는 데이법률사무소와 대표 변호사 강민성을 소개합니다. 서울 서초동 소재, 형사·사기·도산·손해배상 분야.",
+  alternates: { canonical: "/about" },
 };
 
 const PRINCIPLES = [
