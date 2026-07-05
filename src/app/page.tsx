@@ -2,6 +2,7 @@ import Link from "next/link";
 
 const PRACTICE_AREAS = [
   {
+    href: "/practice/voice-phishing",
     title: "보이스피싱 피해 회복",
     description:
       "전화·문자로 기관이나 가족을 사칭해 돈을 가로채는 범죄입니다. 시간이 지날수록 자금 추적이 어려워지므로 빠른 대응이 중요합니다.",
@@ -15,6 +16,7 @@ const PRACTICE_AREAS = [
     ),
   },
   {
+    href: "/practice/investment-scam",
     title: "리딩방 · 투자사기",
     description:
       "고수익을 약속하며 접근하는 주식·선물 리딩방, 가짜 투자 플랫폼 사기입니다. 대화 기록과 입금 내역이 남아 있다면 지금이 대응할 때입니다.",
@@ -28,6 +30,7 @@ const PRACTICE_AREAS = [
     ),
   },
   {
+    href: "/practice/coin-fraud",
     title: "코인 · 유사수신",
     description:
       "가상자산 상장, 원금 보장 등을 내세워 투자금을 모으는 유사수신 범죄입니다. 구조가 복잡할수록 법률 전문가의 분석이 필요합니다.",
@@ -157,6 +160,13 @@ export default function Home() {
                     </li>
                   ))}
                 </ul>
+                <Link
+                  href={area.href}
+                  className="mt-6 inline-flex items-center gap-1 text-sm font-bold text-navy-900 hover:text-navy-600"
+                >
+                  자세히 보기
+                  <span aria-hidden>→</span>
+                </Link>
               </article>
             ))}
           </div>
