@@ -252,6 +252,13 @@ export default function Home() {
                   인스타그램 · 스레드 @strong_lawyer
                 </li>
               </ul>
+              <Link
+                href="/about"
+                className="mt-8 inline-flex items-center gap-1 text-sm font-bold text-gold-400 hover:text-gold-300"
+              >
+                사무소 · 변호사 소개 더 보기
+                <span aria-hidden>→</span>
+              </Link>
             </div>
           </div>
         </div>
