@@ -13,7 +13,7 @@ export function GET() {
     "",
     `Sitemap: ${SITE_URL}/sitemap.xml`,
     "",
-    "c#DaumWebMasterTool:b7f0e522df73d046eb0cfbcfc4c28fca6c70562b32c360324bbf09ef89e6f760:6LQqhj3iSch63nUQiWlmNw==",
+    "#DaumWebMasterTool:793f83723fc45a1e8c94d3a161d148c73379d7fd320f1abafb7f9c6f36e43e63:6LQqhj3iSch63nUQiWlmNw==",
     "",
   ].join("\n");
 
