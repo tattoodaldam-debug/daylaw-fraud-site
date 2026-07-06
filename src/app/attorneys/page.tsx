@@ -99,6 +99,12 @@ export default function AttorneysPage() {
                   <span aria-hidden className="mt-0.5 text-gold-400">
                     —
                   </span>
+                  2020년 변호사 등록 · 서울지방변호사회
+                </li>
+                <li className="flex items-start gap-3">
+                  <span aria-hidden className="mt-0.5 text-gold-400">
+                    —
+                  </span>
                   금융사기 · 형사 · 도산(회생/파산/채무조정) 사건 중심 수행
                 </li>
                 <li className="flex items-start gap-3">
