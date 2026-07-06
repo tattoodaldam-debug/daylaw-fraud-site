@@ -6,7 +6,7 @@ import Disclaimer from "@/components/Disclaimer";
 export const metadata: Metadata = {
   title: "사무소·변호사 소개",
   description:
-    "금융사기 피해자 대리에 집중하는 데이법률사무소와 대표 변호사 강민성을 소개합니다. 서울 서초동 소재, 형사·사기·도산·손해배상 분야.",
+    "금융사기 피해자 대리에 집중하는 데이법률사무소와 대표 변호사 강민성을 소개합니다. 서울 서초동 소재, 금융사기·형사·도산 사건 중심.",
   alternates: { canonical: "/attorneys/" },
 };
 
@@ -85,9 +85,8 @@ export default function AttorneysPage() {
                 대표 변호사 강민성
               </h2>
               <p className="mt-5 leading-relaxed text-navy-200">
-                형사, 사기, 도산(회생·파산·채무조정), 교통사고, 손해배상
-                사건을 두루 다루며, 금융사기 피해자의 실질적인 회복에
-                집중하고 있습니다.
+                금융사기, 형사, 도산(회생·파산·채무조정) 사건을 중점적으로
+                다루며, 금융사기 피해자의 실질적인 회복에 집중하고 있습니다.
               </p>
               <ul className="mt-7 space-y-3 text-sm text-navy-100">
                 <li className="flex items-start gap-3">
@@ -100,20 +99,25 @@ export default function AttorneysPage() {
                   <span aria-hidden className="mt-0.5 text-gold-400">
                     —
                   </span>
-                  SBS 모닝와이드 출연 (법률 전문가 패널)
+                  금융사기 · 형사 · 도산(회생/파산/채무조정) 사건 중심 수행
                 </li>
                 <li className="flex items-start gap-3">
                   <span aria-hidden className="mt-0.5 text-gold-400">
                     —
                   </span>
-                  주요 분야: 형사 · 사기 · 도산(회생/파산/채무조정) · 교통사고
-                  · 손해배상
+                  연간 1,000건 이상 사건 수행
                 </li>
                 <li className="flex items-start gap-3">
                   <span aria-hidden className="mt-0.5 text-gold-400">
                     —
                   </span>
-                  인스타그램 · 스레드 @strong_lawyer
+                  SBS 〈모닝와이드〉 법률 전문가 출연
+                </li>
+                <li className="flex items-start gap-3">
+                  <span aria-hidden className="mt-0.5 text-gold-400">
+                    —
+                  </span>
+                  공식 SNS(인스타그램 · 스레드) @strong_lawyer 운영
                 </li>
               </ul>
               <p className="mt-7 text-xs text-navy-400">

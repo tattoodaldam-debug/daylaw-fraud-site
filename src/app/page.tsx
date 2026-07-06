@@ -305,7 +305,7 @@ export default function Home() {
                 대표 변호사 강민성
               </h2>
               <p className="mt-6 max-w-xl leading-relaxed text-navy-200">
-                형사, 사기, 도산(회생·파산·채무조정), 손해배상 사건을 두루
+                금융사기, 형사, 도산(회생·파산·채무조정) 사건을 중점적으로
                 다루며 금융사기 피해자의 곁에서 실질적인 회복을 돕고 있습니다.
               </p>
               <ul className="mt-8 space-y-3 text-sm text-navy-100">
@@ -319,19 +319,19 @@ export default function Home() {
                   <span aria-hidden className="mt-0.5 text-gold-400">
                     —
                   </span>
-                  SBS 모닝와이드 출연 (법률 전문가 패널)
+                  금융사기 · 형사 · 도산 사건 중심 수행 (연간 1,000건 이상)
                 </li>
                 <li className="flex items-start gap-3">
                   <span aria-hidden className="mt-0.5 text-gold-400">
                     —
                   </span>
-                  주요 분야: 형사 · 사기 · 도산 · 교통사고 · 손해배상
+                  SBS 〈모닝와이드〉 법률 전문가 출연
                 </li>
                 <li className="flex items-start gap-3">
                   <span aria-hidden className="mt-0.5 text-gold-400">
                     —
                   </span>
-                  인스타그램 · 스레드 @strong_lawyer
+                  공식 SNS(인스타그램 · 스레드) @strong_lawyer 운영
                 </li>
               </ul>
               <Link

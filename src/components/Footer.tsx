@@ -8,7 +8,7 @@ export default function Footer() {
           <div>
             <p className="text-lg font-black text-white">데이법률사무소</p>
             <p className="mt-1 text-sm text-navy-400">
-              금융사기 피해 회복 전문 법률사무소
+              금융사기 피해 회복에 집중하는 법률사무소
             </p>
           </div>
           <dl className="space-y-2 text-sm">
