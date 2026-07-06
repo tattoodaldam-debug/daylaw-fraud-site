@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   title: "금융사기 대응 법률 칼럼",
   description:
     "보이스피싱 대처법, 리딩방 사기 대응, 코인 유사수신 피해 회복 등 금융사기 피해자에게 필요한 법률 정보를 칼럼으로 정리합니다.",
-  alternates: { canonical: "/column" },
+  alternates: { canonical: "/column/" },
 };
 
 export default function ColumnListPage() {

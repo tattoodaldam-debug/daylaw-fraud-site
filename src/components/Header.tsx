@@ -6,7 +6,7 @@ import { useState } from "react";
 const NAV_ITEMS = [
   { label: "홈", href: "/" },
   { label: "업무분야", href: "/#practice" },
-  { label: "변호사 소개", href: "/about" },
+  { label: "변호사 소개", href: "/attorneys" },
   { label: "자주 묻는 질문", href: "/faq" },
   { label: "칼럼", href: "/column" },
   { label: "상담안내", href: "/contact" },

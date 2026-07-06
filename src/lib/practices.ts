@@ -127,8 +127,8 @@ export const PRACTICES: Practice[] = [
     ],
   },
   {
-    slug: "investment-scam",
-    title: "리딩방 · 투자사기",
+    slug: "stock-leading-room",
+    title: "리딩방 사기",
     tagline: "수익 인증에 속으셨더라도, 기록이 남아 있다면 방법이 있습니다.",
     summary: [
       "리딩방 사기는 사기죄와 함께 자본시장법 위반이 문제될 수 있는 조직적 범죄입니다.",
@@ -234,8 +234,8 @@ export const PRACTICES: Practice[] = [
     ],
   },
   {
-    slug: "coin-fraud",
-    title: "코인 · 유사수신",
+    slug: "crypto-fraud",
+    title: "코인 사기",
     tagline: "'원금 보장'이라는 말 자체가 위법의 신호일 수 있습니다.",
     summary: [
       "원금 보장과 확정 수익을 약속하며 자금을 모으는 행위는 유사수신행위로 처벌될 수 있습니다.",

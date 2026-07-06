@@ -4,7 +4,7 @@ export const metadata: Metadata = {
   title: "금융사기 피해 상담안내 · 오시는 길",
   description:
     "보이스피싱·투자사기·코인 사기 피해 상담 안내. 서울 서초구 서초동 1624-21. 상담 전 준비하면 좋은 자료 체크리스트(이체내역, 대화 캡처, 상대 계좌정보)를 확인하세요.",
-  alternates: { canonical: "/contact" },
+  alternates: { canonical: "/contact/" },
 };
 
 const CHECKLIST = [
