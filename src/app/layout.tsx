@@ -44,6 +44,9 @@ export const metadata: Metadata = {
     follow: true,
   },
   alternates: { canonical: "/" },
+  verification: {
+    google: "Yg89ckDSfYc3o_mPNgLfF6sJhwu0SFh67ys1DJitnWo",
+  },
 };
 
 const legalServiceJsonLd = {
