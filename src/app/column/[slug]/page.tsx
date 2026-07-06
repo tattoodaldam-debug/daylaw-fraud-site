@@ -1,8 +1,10 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
+import Breadcrumb from "@/components/Breadcrumb";
 import Disclaimer from "@/components/Disclaimer";
 import { COLUMNS, getColumn } from "@/lib/columns";
+import { SITE_NAME, SITE_URL } from "@/lib/site";
 
 type Props = {
   params: Promise<{ slug: string }>;
@@ -34,12 +36,42 @@ export default async function ColumnDetailPage({ params }: Props) {
   const column = getColumn(slug);
   if (!column) notFound();
 
+  const articleJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    headline: column.title,
+    description: column.description,
+    datePublished: column.date,
+    dateModified: column.dateModified,
+    author: {
+      "@type": "Person",
+      name: "강민성",
+      jobTitle: "변호사",
+      worksFor: { "@type": "LegalService", name: SITE_NAME },
+    },
+    publisher: { "@type": "Organization", name: SITE_NAME },
+    mainEntityOfPage: `${SITE_URL}/column/${column.slug}/`,
+    inLanguage: "ko",
+  };
+
   return (
     <main>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }}
+      />
+
       {/* 머리말 + 3줄 요약 */}
       <section className="bg-navy-950 text-white">
         <div className="mx-auto max-w-3xl px-4 py-16 sm:px-6 sm:py-20">
-          <div className="flex flex-wrap items-center gap-3 text-xs">
+          <Breadcrumb
+            items={[
+              { name: "홈", href: "/" },
+              { name: "칼럼", href: "/column" },
+              { name: column.title },
+            ]}
+          />
+          <div className="mt-5 flex flex-wrap items-center gap-3 text-xs">
             <span className="rounded-full bg-navy-800 px-3 py-1 font-bold text-navy-100">
               {column.category}
             </span>

@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import Breadcrumb from "@/components/Breadcrumb";
 import Disclaimer from "@/components/Disclaimer";
 import { PRACTICES } from "@/lib/practices";
 
@@ -96,10 +97,10 @@ export default function FraudHubPage() {
       {/* 머리말 */}
       <section className="bg-navy-950 text-white">
         <div className="mx-auto max-w-5xl px-4 py-16 sm:px-6 sm:py-20">
-          <p className="text-sm font-bold tracking-widest text-gold-400">
-            사건유형
-          </p>
-          <h1 className="mt-3 text-3xl font-black sm:text-4xl">
+          <Breadcrumb
+            items={[{ name: "홈", href: "/" }, { name: "금융사기 유형" }]}
+          />
+          <h1 className="mt-4 text-3xl font-black sm:text-4xl">
             내 사건은 어떤 유형인가요?
           </h1>
           <p className="mt-5 max-w-2xl leading-relaxed text-navy-200">

@@ -3,6 +3,7 @@ import { Noto_Sans_KR } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import MobileCtaBar from "@/components/MobileCtaBar";
 import { SITE_ADDRESS, SITE_NAME, SITE_URL } from "@/lib/site";
 
 const notoSansKr = Noto_Sans_KR({
@@ -87,6 +88,9 @@ export default function RootLayout({
         <Header />
         <div className="flex-1">{children}</div>
         <Footer />
+        {/* 모바일 하단 CTA 바에 가려지지 않도록 여백 확보 */}
+        <div aria-hidden className="h-14 md:hidden" />
+        <MobileCtaBar />
       </body>
     </html>
   );

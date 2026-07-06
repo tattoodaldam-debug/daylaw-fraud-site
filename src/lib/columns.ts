@@ -9,7 +9,8 @@ export type Column = {
   title: string;
   description: string;
   category: string;
-  date: string; // YYYY-MM-DD
+  date: string; // 작성일 YYYY-MM-DD
+  dateModified: string; // 수정일 YYYY-MM-DD
   summary: [string, string, string];
   sections: ColumnSection[];
 };
@@ -22,6 +23,7 @@ export const COLUMNS: Column[] = [
       "전화를 끊고 나서 '당했다'는 생각이 드는 순간부터 무엇을 해야 하는지, 시간 순서대로 정리했습니다.",
     category: "보이스피싱",
     date: "2026-07-06",
+    dateModified: "2026-07-06",
     summary: [
       "가장 먼저 112 또는 은행 콜센터에 전화해 상대방 계좌의 지급정지를 요청하세요.",
       "경찰서에서 피해 신고 후 '사건사고사실확인원'을 발급받고, 3영업일 안에 은행에 피해구제 신청서를 내야 합니다.",
@@ -78,6 +80,7 @@ export const COLUMNS: Column[] = [
       "출금이 막히기 시작한 순간부터 형사 고소와 민사 청구까지, 리딩방 사기 피해 회복의 전체 흐름을 정리했습니다.",
     category: "투자사기",
     date: "2026-07-06",
+    dateModified: "2026-07-06",
     summary: [
       "'세금·수수료를 내야 출금된다'는 말이 나오는 순간, 추가 입금을 멈추는 것이 최우선입니다.",
       "대화방에서 나가지 말고 대화 내용, 수익 화면, 이체 내역을 전부 캡처해 보존하세요.",

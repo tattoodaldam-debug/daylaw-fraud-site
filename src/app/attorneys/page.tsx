@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import Breadcrumb from "@/components/Breadcrumb";
 import Disclaimer from "@/components/Disclaimer";
 
 export const metadata: Metadata = {
@@ -33,10 +34,10 @@ export default function AttorneysPage() {
       {/* 사무소 소개 */}
       <section className="bg-navy-950 text-white">
         <div className="mx-auto max-w-4xl px-4 py-16 sm:px-6 sm:py-20">
-          <p className="text-sm font-bold tracking-widest text-gold-400">
-            ABOUT
-          </p>
-          <h1 className="mt-3 text-3xl font-black sm:text-4xl">
+          <Breadcrumb
+            items={[{ name: "홈", href: "/" }, { name: "변호사 소개" }]}
+          />
+          <h1 className="mt-4 text-3xl font-black sm:text-4xl">
             데이법률사무소
           </h1>
           <p className="mt-6 max-w-2xl leading-relaxed text-navy-200">

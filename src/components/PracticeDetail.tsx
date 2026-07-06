@@ -1,5 +1,6 @@
 import Link from "next/link";
 import type { Practice } from "@/lib/practices";
+import Breadcrumb from "@/components/Breadcrumb";
 import Disclaimer from "@/components/Disclaimer";
 
 export default function PracticeDetail({ practice }: { practice: Practice }) {
@@ -23,10 +24,14 @@ export default function PracticeDetail({ practice }: { practice: Practice }) {
       {/* ① 머리말 + 핵심 요약 3줄 */}
       <section className="bg-navy-950 text-white">
         <div className="mx-auto max-w-4xl px-4 py-16 sm:px-6 sm:py-20">
-          <p className="text-sm font-bold tracking-widest text-gold-400">
-            사건유형
-          </p>
-          <h1 className="mt-3 text-3xl font-black sm:text-4xl">
+          <Breadcrumb
+            items={[
+              { name: "홈", href: "/" },
+              { name: "금융사기 유형", href: "/fraud" },
+              { name: practice.title },
+            ]}
+          />
+          <h1 className="mt-4 text-3xl font-black sm:text-4xl">
             {practice.title}
           </h1>
           <p className="mt-4 text-lg text-navy-200">{practice.tagline}</p>
