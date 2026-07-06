@@ -5,8 +5,7 @@ import { SITE_URL } from "@/lib/site";
 
 /**
  * '준비 중'(noindex) 상태인 페이지는 콘텐츠 완성 후 여기에 추가합니다:
- * /fraud/investment-fraud/, /fraud/stock-fraud/, /fraud/illegal-fundraising/,
- * /fraud/fraud-crime/, /victim/complaint/, /victim/recovery/, /victim/civil-lawsuit/
+ * /victim/complaint/, /victim/recovery/, /victim/civil-lawsuit/
  */
 export default function sitemap(): MetadataRoute.Sitemap {
   const staticRoutes: MetadataRoute.Sitemap = [

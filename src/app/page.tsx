@@ -171,6 +171,30 @@ export default function Home() {
               </article>
             ))}
           </div>
+          <div className="mt-8 rounded-xl border border-navy-100 bg-white p-5 sm:p-6">
+            <p className="text-sm font-bold text-navy-500">
+              그 밖의 사건유형
+            </p>
+            <div className="mt-3 flex flex-wrap gap-2">
+              {[
+                { label: "사기죄 일반", href: "/fraud/fraud-crime" },
+                { label: "투자사기", href: "/fraud/investment-fraud" },
+                { label: "주식·공모주 사기", href: "/fraud/stock-fraud" },
+                {
+                  label: "유사수신·다단계",
+                  href: "/fraud/illegal-fundraising",
+                },
+              ].map((item) => (
+                <Link
+                  key={item.href}
+                  href={item.href}
+                  className="rounded-full border border-navy-200 px-4 py-2 text-sm font-bold text-navy-800 transition-colors hover:border-navy-400 hover:bg-navy-50"
+                >
+                  {item.label}
+                </Link>
+              ))}
+            </div>
+          </div>
         </div>
       </section>
 

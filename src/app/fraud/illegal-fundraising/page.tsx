@@ -1,27 +1,14 @@
 import type { Metadata } from "next";
-import TopicPreview from "@/components/TopicPreview";
+import PracticeDetail from "@/components/PracticeDetail";
+import { getPractice } from "@/lib/practices";
 
 export const metadata: Metadata = {
-  title: "유사수신·다단계 피해 대응 변호사",
+  title: "유사수신·다단계 변호사 상담 · 투자금 반환 대응",
   description:
-    "원금 보장·확정 수익을 약속하며 자금을 모으는 유사수신, 하위 모집 수당을 내세우는 불법 다단계 피해 대응을 안내합니다.",
+    "원금 보장·확정 배당을 내건 유사수신, 모집 수당형 다단계 피해는 유사수신 변호사 상담으로 대응하세요. 유사수신행위법 위반 고소, 배당금 정리, 재산 가압류 절차를 안내합니다.",
   alternates: { canonical: "/fraud/illegal-fundraising/" },
-  robots: { index: false, follow: true },
 };
 
 export default function IllegalFundraisingPage() {
-  return (
-    <TopicPreview
-      category="사건유형"
-      title="유사수신·다단계"
-      intro={[
-        "인허가 없이 '원금 보장'과 '확정 수익'을 약속하며 불특정 다수의 자금을 모으는 행위는 유사수신행위법이 금지하는 범죄입니다.",
-        "지인 소개와 하위 모집 수당으로 피해가 가족·지인 단위로 번지는 것이 특징이며, 배당이 아직 나오고 있어도 안심할 수 없습니다.",
-      ]}
-      related={[
-        { label: "코인 사기 피해 대응", href: "/fraud/crypto-fraud" },
-        { label: "자주 묻는 질문 (코인)", href: "/faq#coin" },
-      ]}
-    />
-  );
+  return <PracticeDetail practice={getPractice("illegal-fundraising")!} />;
 }

@@ -3,9 +3,9 @@ import PracticeDetail from "@/components/PracticeDetail";
 import { getPractice } from "@/lib/practices";
 
 export const metadata: Metadata = {
-  title: "코인 사기 피해 대응 변호사",
+  title: "코인 사기 변호사 상담 · 가상자산 피해 대응",
   description:
-    "코인 상장 빙자, 채굴기 투자, 스테이킹 이자 지급 중단 등 가상자산 사기·유사수신 피해의 형사 고소와 손해배상 절차를 변호사가 안내합니다.",
+    "상장 빙자 코인, 채굴기·스테이킹 투자, 가짜 지갑 앱 피해는 코인 사기 변호사 상담으로 대응하세요. 가상자산 추적, 형사고소, 손해배상과 재산 동결 절차를 안내합니다.",
   alternates: { canonical: "/fraud/crypto-fraud/" },
 };
 
