@@ -1,0 +1,9 @@
+# 구 주소 → 신 주소 (301 영구 이동) — Cloudflare Pages 리다이렉트 규칙
+/practice/voice-phishing /fraud/voice-phishing/ 301
+/practice/voice-phishing/ /fraud/voice-phishing/ 301
+/practice/investment-scam /fraud/stock-leading-room/ 301
+/practice/investment-scam/ /fraud/stock-leading-room/ 301
+/practice/coin-fraud /fraud/crypto-fraud/ 301
+/practice/coin-fraud/ /fraud/crypto-fraud/ 301
+/about /attorneys/ 301
+/about/ /attorneys/ 301

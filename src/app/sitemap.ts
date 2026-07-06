@@ -4,6 +4,8 @@ import { PRACTICES } from "@/lib/practices";
 import { VICTIM_TOPICS } from "@/lib/victimTopics";
 import { SITE_URL } from "@/lib/site";
 
+export const dynamic = "force-static";
+
 export default function sitemap(): MetadataRoute.Sitemap {
   const staticRoutes: MetadataRoute.Sitemap = [
     { path: "/", priority: 1.0 },

@@ -1,9 +1,8 @@
 /**
- * 배포 시 실제 도메인을 NEXT_PUBLIC_SITE_URL 환경변수로 설정해야 합니다.
- * (예: https://예정도메인.com)
+ * 확정 도메인. 다른 주소로 빌드하려면 NEXT_PUBLIC_SITE_URL 환경변수로 덮어쓸 수 있습니다.
  */
 export const SITE_URL =
-  process.env.NEXT_PUBLIC_SITE_URL ?? "http://localhost:3000";
+  process.env.NEXT_PUBLIC_SITE_URL ?? "https://daylaw-fraud.com";
 
 export const SITE_NAME = "데이법률사무소";
 
