@@ -1,15 +1,13 @@
 import type { MetadataRoute } from "next";
 import { COLUMNS } from "@/lib/columns";
 import { PRACTICES } from "@/lib/practices";
+import { VICTIM_TOPICS } from "@/lib/victimTopics";
 import { SITE_URL } from "@/lib/site";
 
-/**
- * '준비 중'(noindex) 상태인 페이지는 콘텐츠 완성 후 여기에 추가합니다:
- * /victim/complaint/, /victim/recovery/, /victim/civil-lawsuit/
- */
 export default function sitemap(): MetadataRoute.Sitemap {
   const staticRoutes: MetadataRoute.Sitemap = [
     { path: "/", priority: 1.0 },
+    { path: "/fraud/", priority: 0.9 },
     { path: "/attorneys/", priority: 0.8 },
     { path: "/contact/", priority: 0.9 },
     { path: "/faq/", priority: 0.8 },
@@ -28,6 +26,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.9,
   }));
 
+  const victimRoutes: MetadataRoute.Sitemap = VICTIM_TOPICS.map((topic) => ({
+    url: `${SITE_URL}/victim/${topic.slug}/`,
+    lastModified: new Date(),
+    changeFrequency: "monthly",
+    priority: 0.8,
+  }));
+
   const columnRoutes: MetadataRoute.Sitemap = COLUMNS.map((column) => ({
     url: `${SITE_URL}/column/${column.slug}/`,
     lastModified: new Date(column.date),
@@ -35,5 +40,5 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.6,
   }));
 
-  return [...staticRoutes, ...fraudRoutes, ...columnRoutes];
+  return [...staticRoutes, ...fraudRoutes, ...victimRoutes, ...columnRoutes];
 }

@@ -45,6 +45,29 @@ const PRACTICE_AREAS = [
   },
 ];
 
+const SITUATION_CARDS = [
+  {
+    title: "투자금·피해금을 돌려받고 싶습니다",
+    hint: "회수 절차부터 확인하기",
+    href: "/victim/recovery",
+  },
+  {
+    title: "사기죄로 고소하고 싶습니다",
+    hint: "고소대리 절차 안내",
+    href: "/victim/complaint",
+  },
+  {
+    title: "어떤 증거를 모아야 할지 모르겠습니다",
+    hint: "증거 정리 가이드로 이동",
+    href: "/fraud#evidence",
+  },
+  {
+    title: "내 사건이 사기죄가 되는지 궁금합니다",
+    hint: "사기죄 성립요건 확인",
+    href: "/fraud/fraud-crime",
+  },
+];
+
 const PROCESS_STEPS = [
   {
     step: "01",
@@ -99,7 +122,7 @@ export default function Home() {
               상담 안내 보기
             </Link>
             <Link
-              href="/#practice"
+              href="/fraud"
               className="rounded-md border border-navy-600 px-8 py-4 text-center text-base font-bold text-navy-100 transition-colors hover:border-navy-400 hover:bg-navy-900"
             >
               업무분야 살펴보기
@@ -108,6 +131,40 @@ export default function Home() {
           <p className="mt-6 text-sm text-navy-400">
             전화 · 온라인 상담 창구는 현재 준비 중입니다.
           </p>
+        </div>
+      </section>
+
+      {/* 현재 상황 분기 — 피해자 동선 */}
+      <section className="border-b border-navy-100 bg-white">
+        <div className="mx-auto max-w-6xl px-4 py-14 sm:px-6 sm:py-16">
+          <h2 className="text-2xl font-black text-navy-950 sm:text-3xl">
+            현재 어떤 상황이신가요?
+          </h2>
+          <p className="mt-3 text-navy-700">
+            지금 가장 가까운 상황을 고르면, 필요한 안내로 바로 이동합니다.
+          </p>
+          <div className="mt-8 grid gap-4 sm:grid-cols-2">
+            {SITUATION_CARDS.map((card) => (
+              <Link
+                key={card.href}
+                href={card.href}
+                className="group flex items-center justify-between gap-4 rounded-xl border border-navy-100 bg-navy-50 p-6 transition-colors hover:border-navy-400 hover:bg-white"
+              >
+                <div>
+                  <p className="text-base font-black text-navy-950 sm:text-lg">
+                    {card.title}
+                  </p>
+                  <p className="mt-1 text-sm text-navy-600">{card.hint}</p>
+                </div>
+                <span
+                  aria-hidden
+                  className="shrink-0 text-xl text-gold-500 transition-transform group-hover:translate-x-1"
+                >
+                  →
+                </span>
+              </Link>
+            ))}
+          </div>
         </div>
       </section>
 
