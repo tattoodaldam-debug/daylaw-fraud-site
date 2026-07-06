@@ -165,6 +165,16 @@ export default function Home() {
               </Link>
             ))}
           </div>
+          <p className="mt-6 text-sm text-navy-600">
+            상황별로 어떤 절차를 밟게 되는지 궁금하다면{" "}
+            <Link
+              href="/scenarios"
+              className="font-bold text-navy-900 underline hover:text-navy-600"
+            >
+              상황별 대응 시나리오
+            </Link>
+            를 참고하세요.
+          </p>
         </div>
       </section>
 

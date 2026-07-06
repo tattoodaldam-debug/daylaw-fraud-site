@@ -10,6 +10,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const staticRoutes: MetadataRoute.Sitemap = [
     { path: "/", priority: 1.0 },
     { path: "/fraud/", priority: 0.9 },
+    { path: "/scenarios/", priority: 0.7 },
     { path: "/attorneys/", priority: 0.8 },
     { path: "/contact/", priority: 0.9 },
     { path: "/faq/", priority: 0.8 },

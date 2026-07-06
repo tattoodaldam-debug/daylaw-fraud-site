@@ -44,6 +44,9 @@ export default function Footer() {
           <div className="mt-4 flex flex-col gap-2 text-xs text-navy-400 sm:flex-row sm:items-center sm:justify-between">
             <p>© {new Date().getFullYear()} 데이법률사무소. All rights reserved.</p>
             <nav className="flex gap-4">
+              <Link href="/scenarios" className="hover:text-white">
+                대응 시나리오
+              </Link>
               <Link href="/faq" className="hover:text-white">
                 자주 묻는 질문
               </Link>
