@@ -126,7 +126,7 @@ export default function FraudHubPage() {
                 key={step.title}
                 className="flex gap-4 rounded-xl border border-navy-100 bg-white p-5 sm:p-6"
               >
-                <span className="text-2xl font-black text-gold-500">
+                <span className="text-2xl font-black text-gold-700">
                   {String(i + 1).padStart(2, "0")}
                 </span>
                 <div>
@@ -195,7 +195,7 @@ export default function FraudHubPage() {
               </div>
             ))}
           </div>
-          <p className="mt-6 text-sm text-navy-400">
+          <p className="mt-6 text-sm text-navy-300">
             자료가 일부만 있어도 대응은 시작할 수 있습니다. 삭제하지 말고 그대로
             보관해 주세요.
           </p>

@@ -79,7 +79,7 @@ export default function ContactPage() {
               <p className="mt-3 text-lg font-black text-navy-400">
                 전화 상담
               </p>
-              <p className="mt-1 text-sm font-bold text-gold-500">준비 중</p>
+              <p className="mt-1 text-sm font-bold text-gold-700">준비 중</p>
             </div>
             <div
               aria-disabled
@@ -91,7 +91,7 @@ export default function ContactPage() {
               <p className="mt-3 text-lg font-black text-navy-400">
                 카카오톡 상담
               </p>
-              <p className="mt-1 text-sm font-bold text-gold-500">준비 중</p>
+              <p className="mt-1 text-sm font-bold text-gold-700">준비 중</p>
             </div>
           </div>
         </div>
@@ -115,7 +115,7 @@ export default function ContactPage() {
               >
                 <span
                   aria-hidden
-                  className="mt-0.5 flex h-6 w-6 shrink-0 items-center justify-center rounded border-2 border-gold-500 text-sm font-black text-gold-500"
+                  className="mt-0.5 flex h-6 w-6 shrink-0 items-center justify-center rounded border-2 border-gold-500 text-sm font-black text-gold-700"
                 >
                   ✓
                 </span>
@@ -142,7 +142,7 @@ export default function ContactPage() {
           </p>
           {/* 지도 자리 — 추후 지도 API 연동 */}
           <div className="mt-6 flex h-72 items-center justify-center rounded-xl border border-dashed border-navy-200 bg-navy-50">
-            <p className="text-sm text-navy-400">지도 준비 중</p>
+            <p className="text-sm text-navy-600">지도 준비 중</p>
           </div>
         </div>
       </section>

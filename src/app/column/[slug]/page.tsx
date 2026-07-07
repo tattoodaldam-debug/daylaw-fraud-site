@@ -75,7 +75,7 @@ export default async function ColumnDetailPage({ params }: Props) {
             <span className="rounded-full bg-navy-800 px-3 py-1 font-bold text-navy-100">
               {column.category}
             </span>
-            <time dateTime={column.date} className="text-navy-400">
+            <time dateTime={column.date} className="text-navy-600">
               {column.date.replaceAll("-", ".")}
             </time>
             <span className="rounded bg-gold-300/30 px-1.5 py-0.5 font-bold text-gold-300">

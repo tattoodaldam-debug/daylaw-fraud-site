@@ -39,7 +39,7 @@ export default function ColumnListPage() {
                   <span className="rounded-full bg-navy-900 px-3 py-1 font-bold text-white">
                     {column.category}
                   </span>
-                  <time dateTime={column.date} className="text-navy-400">
+                  <time dateTime={column.date} className="text-navy-600">
                     {column.date.replaceAll("-", ".")}
                   </time>
                   <span className="rounded bg-gold-300/40 px-1.5 py-0.5 font-bold text-navy-800">

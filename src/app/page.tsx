@@ -128,7 +128,7 @@ export default function Home() {
               업무분야 살펴보기
             </Link>
           </div>
-          <p className="mt-6 text-sm text-navy-400">
+          <p className="mt-6 text-sm text-navy-300">
             전화 · 온라인 상담 창구는 현재 준비 중입니다.
           </p>
         </div>
@@ -158,7 +158,7 @@ export default function Home() {
                 </div>
                 <span
                   aria-hidden
-                  className="shrink-0 text-xl text-gold-500 transition-transform group-hover:translate-x-1"
+                  className="shrink-0 text-xl text-gold-700 transition-transform group-hover:translate-x-1"
                 >
                   →
                 </span>
@@ -181,7 +181,7 @@ export default function Home() {
       {/* 주력 분야 */}
       <section id="practice" className="scroll-mt-16 bg-navy-50">
         <div className="mx-auto max-w-6xl px-4 py-16 sm:px-6 sm:py-24">
-          <p className="text-sm font-bold tracking-widest text-gold-500">
+          <p className="text-sm font-bold tracking-widest text-gold-700">
             PRACTICE AREAS
           </p>
           <h2 className="mt-2 text-2xl font-black text-navy-950 sm:text-4xl">
@@ -221,7 +221,7 @@ export default function Home() {
                       key={point}
                       className="flex items-start gap-2 text-sm text-navy-800"
                     >
-                      <span aria-hidden className="mt-0.5 text-gold-500">
+                      <span aria-hidden className="mt-0.5 text-gold-700">
                         ✓
                       </span>
                       {point}
@@ -268,7 +268,7 @@ export default function Home() {
       {/* 진행 절차 */}
       <section className="bg-white">
         <div className="mx-auto max-w-6xl px-4 py-16 sm:px-6 sm:py-24">
-          <p className="text-sm font-bold tracking-widest text-gold-500">
+          <p className="text-sm font-bold tracking-widest text-gold-700">
             PROCESS
           </p>
           <h2 className="mt-2 text-2xl font-black text-navy-950 sm:text-4xl">
@@ -284,7 +284,7 @@ export default function Home() {
                 key={item.step}
                 className="rounded-xl border border-navy-100 bg-navy-50 p-6"
               >
-                <span className="text-3xl font-black text-gold-500">
+                <span className="text-3xl font-black text-gold-700">
                   {item.step}
                 </span>
                 <h3 className="mt-3 text-base font-black text-navy-950">
@@ -305,7 +305,7 @@ export default function Home() {
           <div className="grid gap-10 lg:grid-cols-[1fr_1.5fr] lg:items-center">
             {/* 사진 자리 (추후 실제 프로필 사진으로 교체) */}
             <div className="flex aspect-[4/5] max-w-sm items-center justify-center rounded-xl border border-navy-700 bg-navy-800">
-              <p className="text-sm text-navy-400">프로필 사진 준비 중</p>
+              <p className="text-sm text-navy-300">프로필 사진 준비 중</p>
             </div>
             <div>
               <p className="text-sm font-bold tracking-widest text-gold-400">

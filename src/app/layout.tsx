@@ -9,7 +9,9 @@ import { SITE_ADDRESS, SITE_NAME, SITE_URL } from "@/lib/site";
 const notoSansKr = Noto_Sans_KR({
   variable: "--font-noto-sans-kr",
   subsets: ["latin"],
-  weight: ["400", "500", "700", "900"],
+  // 실제 사용하는 무게만 로드 (500은 400으로 대체 렌더링)
+  weight: ["400", "700", "900"],
+  display: "swap",
 });
 
 export const metadata: Metadata = {

@@ -7,12 +7,15 @@
   --color-navy-800: #17335c;
   --color-navy-700: #224678;
   --color-navy-600: #2f5a95;
+  --color-navy-500: #456f9e;
   --color-navy-400: #6f93bd;
+  --color-navy-300: #93aecb;
   --color-navy-200: #c3d3e6;
   --color-navy-100: #dde8f4;
   --color-navy-50: #f3f7fb;
 
-  /* 포인트 컬러 — 차분한 골드 */
+  /* 포인트 컬러 — 차분한 골드 (700은 밝은 배경 위 텍스트용) */
+  --color-gold-700: #7d6128;
   --color-gold-500: #b3924f;
   --color-gold-400: #c9ab6d;
   --color-gold-300: #dcc38e;

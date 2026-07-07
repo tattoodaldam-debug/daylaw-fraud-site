@@ -75,7 +75,7 @@ export default function AttorneysPage() {
         <div className="mx-auto max-w-4xl px-4 py-14 sm:px-6 sm:py-20">
           <div className="grid gap-10 md:grid-cols-[1fr_1.6fr] md:items-start">
             <div className="flex aspect-[4/5] max-w-xs items-center justify-center rounded-xl border border-navy-700 bg-navy-800">
-              <p className="text-sm text-navy-400">프로필 사진 준비 중</p>
+              <p className="text-sm text-navy-300">프로필 사진 준비 중</p>
             </div>
             <div>
               <p className="text-sm font-bold tracking-widest text-gold-400">
@@ -126,7 +126,7 @@ export default function AttorneysPage() {
                   공식 SNS(인스타그램 · 스레드) @strong_lawyer 운영
                 </li>
               </ul>
-              <p className="mt-7 text-xs text-navy-400">
+              <p className="mt-7 text-xs text-navy-300">
                 상세 이력은 확인을 거쳐 순차적으로 업데이트됩니다.
               </p>
             </div>

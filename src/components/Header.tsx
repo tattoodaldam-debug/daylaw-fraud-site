@@ -26,7 +26,7 @@ export default function Header() {
           <span className="text-lg font-black tracking-tight text-white">
             데이법률사무소
           </span>
-          <span className="hidden text-xs font-medium text-navy-400 sm:inline">
+          <span className="hidden text-xs font-medium text-navy-300 sm:inline">
             금융사기 피해 회복
           </span>
         </Link>

@@ -173,7 +173,7 @@ export default function ScenariosPage() {
             달라지므로, 내 상황과 비슷한 시나리오를 큰 그림을 잡는 용도로
             활용해 주세요.
           </p>
-          <p className="mt-4 text-sm text-navy-400">
+          <p className="mt-4 text-sm text-navy-300">
             본 페이지의 시나리오는 모두 가상의 예시입니다 · 변호사 검수 전
             초안
           </p>
@@ -200,7 +200,7 @@ export default function ScenariosPage() {
               id={scenario.id}
               className="scroll-mt-24 rounded-2xl border border-navy-100 bg-white p-6 sm:p-9"
             >
-              <p className="text-sm font-bold tracking-widest text-gold-500">
+              <p className="text-sm font-bold tracking-widest text-gold-700">
                 {scenario.label}
               </p>
               <h2 className="mt-2 text-2xl font-black text-navy-950 sm:text-3xl">
@@ -229,7 +229,7 @@ export default function ScenariosPage() {
                     key={step.title}
                     className="flex gap-4 rounded-xl border border-navy-100 bg-navy-50 p-5"
                   >
-                    <span className="text-xl font-black text-gold-500">
+                    <span className="text-xl font-black text-gold-700">
                       {String(i + 1).padStart(2, "0")}
                     </span>
                     <div>
@@ -261,7 +261,7 @@ export default function ScenariosPage() {
                     className="inline-flex items-center gap-1 rounded-full border border-navy-200 px-4 py-2 text-sm font-bold text-navy-900 transition-colors hover:border-navy-400 hover:bg-white"
                   >
                     {link.label}
-                    <span aria-hidden className="text-gold-500">
+                    <span aria-hidden className="text-gold-700">
                       →
                     </span>
                   </Link>

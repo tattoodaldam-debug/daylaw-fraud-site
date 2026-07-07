@@ -166,7 +166,7 @@ export default function PracticeDetail({ practice }: { practice: Practice }) {
               >
                 <span
                   aria-hidden
-                  className="mt-0.5 flex h-6 w-6 shrink-0 items-center justify-center rounded border-2 border-gold-500 text-sm font-black text-gold-500"
+                  className="mt-0.5 flex h-6 w-6 shrink-0 items-center justify-center rounded border-2 border-gold-500 text-sm font-black text-gold-700"
                 >
                   ✓
                 </span>
@@ -194,7 +194,7 @@ export default function PracticeDetail({ practice }: { practice: Practice }) {
                 key={step.title}
                 className="flex gap-4 rounded-xl border border-navy-100 bg-navy-50 p-5 sm:p-6"
               >
-                <span className="text-2xl font-black text-gold-500">
+                <span className="text-2xl font-black text-gold-700">
                   {String(i + 1).padStart(2, "0")}
                 </span>
                 <div>
